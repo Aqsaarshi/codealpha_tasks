@@ -1,4 +1,8 @@
-const API = "https://codealphatasks-production-fe10.up.railway.app/";
+const API =
+  location.hostname === "localhost"
+    ? "http://localhost:3000/posts"
+    : "https://your-railway-url.up.railway.app/posts";
+
 let visiblePosts = 3;
 
 const nameInput = document.getElementById("name");
