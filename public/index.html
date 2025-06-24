@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Social Media App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 🌐 Header -->
+    <nav class="top-nav">
+      <div class="nav-container">
+        <div class="logo">🌐 MiniSocial</div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Posts</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <header>
+        <h1 class="app-title">Mini Social Media App</h1>
+        <p class="subtitle">Share your thoughts with the world</p>
+      </header>
+
+      <section class="search-bar">
+        <input type="text" id="search" placeholder="Search by name..." />
+      </section>
+
+      <section class="post-form">
+        <input type="text" id="name" placeholder="Your Name" />
+        <textarea
+          id="message"
+          maxlength="200"
+          placeholder="What's on your mind? (max 200 chars)"
+        ></textarea>
+
+        <!-- 👇 NEW: Image Upload Field -->
+        <input type="file" id="imageInput" accept="image/*" />
+        <img
+          id="preview"
+          src=""
+          alt="Image Preview"
+          style="max-width: 200px; display: none; margin-top: 10px"
+        />
+
+        <p id="charCount">0 / 200</p>
+        <button id="submitBtn">Post</button>
+      </section>
+
+      <section class="post-feed">
+        <h2>Recent Posts</h2>
+        <div id="feed"></div>
+        <button id="loadMore" class="load-more-btn">Load More</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">🌐 MiniSocial</div>
+        <p>&copy; 2025 by Aqsa — All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
