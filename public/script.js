@@ -1,7 +1,7 @@
 const API =
   location.hostname === "localhost"
     ? "http://localhost:3000/posts"
-    : "https://your-railway-url.up.railway.app/posts";
+    : "https://codealphatasks-production-2545.up.railway.app/posts";
 
 let visiblePosts = 3;
 
