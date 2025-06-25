@@ -1,6 +1,6 @@
 const API =
   location.hostname === "localhost"
-    ? "http://localhost:3000/posts"
+    ? "http://localhost:8080/posts"
     : "https://codealphatasks-production-aqsa.up.railway.app/posts";
 
 let visiblePosts = 3;
